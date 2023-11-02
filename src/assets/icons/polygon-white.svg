@@ -1,0 +1,15 @@
+<svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="24" fill="#E5E5E5"/>
+<g id="Home" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="4626" transform="translate(-680 -2252)" fill="white"/>
+<rect id="Rectangle 417" x="-680" width="1440" height="531" fill="#090C06"/>
+<g id="Group 36222">
+<path id="Polygon 1" d="M40 24L0 0H80L40 24Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="4626" fill="white" transform="translate(-680 -2252)"/>
+</clipPath>
+</defs>
+</svg>

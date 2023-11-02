@@ -1,0 +1,154 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  .dark {
+    width: 100%;
+    background-color: #090c06;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    h2 {
+      display: flex;
+      span {
+        color: #00ad33;
+        margin-left: 10px;
+      }
+    }
+    .svg {
+      position: absolute;
+    }
+  }
+  .ligth {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #090c06;
+    position: relative;
+    h2 {
+      display: flex;
+      span {
+        color: #00ad33;
+        margin-left: 10px;
+      }
+    }
+    .svg {
+      position: absolute;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .dark {
+    height: 120px;
+    h2 {
+      font-size: 35px;
+    }
+    .svg {
+      width: 80px;
+      bottom: -24px;
+    }
+  }
+  .ligth {
+    height: 120px;
+    h2 {
+      font-size: 35px;
+    }
+    .svg {
+      width: 80px;
+      bottom: -24px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .dark {
+    height: 120px;
+    h2 {
+      font-size: 35px;
+    }
+    .svg {
+      width: 80px;
+      bottom: -24px;
+    }
+  }
+  .ligth {
+    height: 120px;
+    h2 {
+      font-size: 35px;
+    }
+    .svg {
+      width: 80px;
+      bottom: -24px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .dark {
+    height: 90px;
+    h2 {
+      font-size: 30px;
+    }
+    .svg {
+      width: 70px;
+      bottom: -21px;
+    }
+  }
+  .ligth {
+    height: 90px;
+    h2 {
+      font-size: 30px;
+    }
+    .svg {
+      width: 70px;
+      bottom: -21px;
+    }
+  }
+}
+@media (min-width: 400px) and (max-width: 767px) {
+  .dark {
+    height: 80px;
+    h2 {
+      font-size: 25px;
+    }
+    .svg {
+      width: 60px;
+      bottom: -18px;
+    }
+  }
+  .ligth {
+    height: 80px;
+    h2 {
+      font-size: 25px;
+    }
+    .svg {
+      width: 60px;
+      bottom: -18px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .dark {
+    height: 70px;
+    h2 {
+      font-size: 20px;
+    }
+    .svg {
+      width: 50px;
+      bottom: -15px;
+    }
+  }
+  .ligth {
+    height: 70px;
+    h2 {
+      font-size: 20px;
+    }
+    .svg {
+      width: 50px;
+      bottom: -15px;
+    }
+  }
+}

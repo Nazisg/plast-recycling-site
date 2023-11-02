@@ -1,0 +1,241 @@
+.about {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .aboutCon {
+    width: 85%;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+
+    .left {
+      width: 50%;
+      position: relative;
+      .aboutImg {
+        width: 100%;
+      }
+      .comment {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        background-color: #00ad33;
+        padding: 18px;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+        color: #fff;
+        position: relative;
+        position: absolute;
+        bottom: -60px;
+        right: -20px;
+        img {
+          position: absolute;
+          top: -12px;
+          left: 30px;
+        }
+        h4 {
+          font-size: 16px;
+          letter-spacing: 0.5px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    .rigth {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h4 {
+        font-size: 30px;
+        span {
+          color: #00ad33;
+        }
+      }
+      p {
+        font-size: 13px;
+        line-height: 20px;
+        color: #4d504b;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    margin: 60px 0;
+    padding: 70px;
+    .aboutCon {
+      gap: 80px;
+
+      .left {
+        width: 50%;
+        .comment {
+          width: 300px;
+          h4 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .rigth {
+        width: 50%;
+        gap: 20px;
+
+        h4 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .about {
+    margin: 60px 0;
+    padding: 70px;
+    .aboutCon {
+      gap: 80px;
+
+      .left {
+        width: 50%;
+        .comment {
+          width: 300px;
+          h4 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .rigth {
+        width: 50%;
+        gap: 20px;
+
+        h4 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .about {
+    margin: 40px 0 80px 0;
+    padding: 40px;
+    .aboutCon {
+      gap: 30px;
+
+      flex-wrap: wrap;
+      .left {
+        width: 100%;
+        .comment {
+          width: 300px;
+          h4 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+      .rigth {
+        width: 100%;
+        gap: 10px;
+
+        h4 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .about {
+    margin: 30px 0 80px 0;
+    padding: 30px;
+    .aboutCon {
+      gap: 30px;
+
+      flex-wrap: wrap;
+      .left {
+        width: 100%;
+        .comment {
+          width: 250px;
+          h4 {
+            font-size: 14px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .rigth {
+        width: 100%;
+        gap: 10px;
+
+        h4 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    margin: 30px 0 80px 0;
+    padding: 30px;
+    .aboutCon {
+      gap: 20px;
+
+      flex-wrap: wrap;
+      .left {
+        width: 100%;
+        .comment {
+          width: 220px;
+          gap: 10px;
+          padding: 15px;
+
+          h4 {
+            font-size: 13px;
+          }
+          p {
+            font-size: 11px;
+            line-height: 15px;
+          }
+        }
+      }
+      .rigth {
+        width: 100%;
+        gap: 10px;
+
+        h4 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

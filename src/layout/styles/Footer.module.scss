@@ -1,0 +1,269 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footerCon {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    .work {
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+          opacity: 0.6;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .headset {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      align-items: flex-start;
+      span {
+        font-family: archivo-thin;
+      }
+      .svgBox {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        svg {
+          cursor: pointer;
+          &:hover g {
+            opacity: 1;
+            fill: red;
+          }
+        }
+      }
+    }
+    .location {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      align-items: flex-start;
+      p {
+        font-family: archivo-thin;
+        line-height: 24px;
+      }
+    }
+  }
+}
+.foot {
+  width: 100%;
+  border-top: 1px solid rgba(153, 153, 153, 0.6);
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding: 80px 0;
+    h2 {
+      font-size: 24px;
+    }
+    img {
+      width: 54px;
+    }
+    .footerCon {
+      flex-wrap: nowrap;
+      .work {
+        width: 32%;
+        gap: 20px;
+        a {
+          font-size: 14px;
+        }
+      }
+      .headset {
+        gap: 20px;
+        width: 32%;
+        span {
+          font-size: 14px;
+        }
+      }
+      .location {
+        gap: 20px;
+        width: 32%;
+      }
+    }
+  }
+  .foot {
+    p {
+      font-size: 13px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding: 80px 0;
+    h2 {
+      font-size: 24px;
+    }
+    img {
+      width: 54px;
+    }
+    .footerCon {
+      flex-wrap: nowrap;
+      .work {
+        width: 32%;
+        gap: 20px;
+        a {
+          font-size: 14px;
+        }
+      }
+      .headset {
+        gap: 20px;
+        width: 32%;
+        span {
+          font-size: 14px;
+        }
+      }
+      .location {
+        gap: 20px;
+        width: 32%;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .foot {
+    p {
+      font-size: 13px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .footer {
+    padding: 60px 0;
+    h2 {
+      font-size: 20px;
+    }
+    img {
+      width: 50px;
+    }
+    .footerCon {
+      flex-wrap: wrap;
+      .work {
+        width: 45%;
+        gap: 15px;
+        a {
+          font-size: 13px;
+        }
+      }
+      .headset {
+        gap: 15px;
+        width: 45%;
+        span {
+          font-size: 13px;
+        }
+      }
+      .location {
+        gap: 15px;
+        width: 100%;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .foot {
+    p {
+      font-size: 11px;
+    }
+  }
+}
+@media (min-width: 522px) and (max-width: 767px) {
+  .footer {
+    padding: 40px 0;
+    h2 {
+      font-size: 18px;
+    }
+    img {
+      width: 45px;
+    }
+    .footerCon {
+      flex-wrap: wrap;
+      .work {
+        width: 47%;
+        gap: 12px;
+
+        a {
+          font-size: 12px;
+        }
+      }
+      .headset {
+        width: 47%;
+        gap: 12px;
+
+        span {
+          font-size: 12px;
+        }
+      }
+      .location {
+        width: 100%;
+        gap: 12px;
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .foot {
+    p {
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 522px) {
+  .footer {
+    padding: 30px 0;
+    h2 {
+      font-size: 16px;
+    }
+    img {
+      width: 40px;
+    }
+    .footerCon {
+      flex-wrap: wrap;
+      .work {
+        gap: 10px;
+        width: 45%;
+        a {
+          font-size: 11px;
+        }
+      }
+      .headset {
+        gap: 10px;
+        width: 45%;
+        span {
+          font-size: 11px;
+        }
+        svg {
+          width: 12px;
+        }
+      }
+      .location {
+        gap: 10px;
+        width: 100%;
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .foot {
+    p {
+      font-size: 8px;
+    }
+  }
+}

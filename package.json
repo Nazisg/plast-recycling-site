@@ -1,0 +1,46 @@
+{
+  "name": "plast-recycling-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.15",
+    "@mui/material": "^5.14.15",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.3",
+    "formik": "^2.4.5",
+    "framer-motion": "^10.16.4",
+    "i18next": "^23.6.0",
+    "owl.carousel": "^2.3.4",
+    "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.6",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.3.1",
+    "react-icons": "^4.11.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.17.0",
+    "react-slick": "^0.29.0",
+    "sass": "^1.69.4",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.0",
+    "yup": "^1.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5"
+  }
+}

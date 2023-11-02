@@ -1,0 +1,197 @@
+.dark {
+  background-color: #090c06;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  .footText {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    p {
+      color: rgba(255, 255, 255, 0.64);
+      letter-spacing: 1px;
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+.ligth {
+  background-color: #f8f8f7;
+  color: #090c06;
+  font-weight: 700;
+  a {
+    color: #090c06;
+  }
+  path {
+    fill: #090c06;
+  }
+  .footText {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      letter-spacing: 1px;
+      span {
+        color: #090c06;
+      }
+    }
+  }
+}
+.darkForm {
+  background-color: #090c06;
+  textarea,
+  input {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  label {
+    color: #fff;
+    font-family: archivo-thin;
+    background-color: #090c06;
+  }
+}
+.lightForm {
+  background-color: #fff;
+  textarea,
+  input {
+    border: 1px solid #090c06;
+  }
+  label {
+    color: #090c06;
+    background-color: #fff;
+  }
+}
+.darkCard {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  h5 {
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 13px;
+    opacity: 0.8;
+    line-height: 20px;
+    font-family: archivo-thin;
+    padding-right: 7px;
+  }
+}
+
+.ligthCard {
+  display: flex;
+  flex-direction: column;
+  color: #090c06;
+  h5 {
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 13px;
+    opacity: 0.8;
+    line-height: 20px;
+  }
+}
+.activelinks {
+  .active {
+    border-left: 2px solid #00ad33;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .darkCard {
+    width: 200px;
+
+    p {
+      font-size: 13px;
+    }
+    .submit {
+      font-size: 14px;
+    }
+  }
+
+  .ligthCard {
+    width: 18%;
+    gap: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .darkCard {
+    width: 200px;
+
+    p {
+      font-size: 13px;
+    }
+    .submit {
+      font-size: 14px;
+    }
+  }
+
+  .ligthCard {
+    width: 18%;
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .darkCard {
+    width: 192px;
+
+    p {
+      font-size: 12px;
+    }
+    .submit {
+      font-size: 13px;
+    }
+  }
+
+  .ligthCard {
+    width: 31%;
+    gap: 15px;
+  }
+}
+@media (min-width: 670px) and (max-width: 767px) {
+  .darkCard {
+    width: 180px;
+
+    p {
+      font-size: 12px;
+    }
+    .submit {
+      font-size: 14px;
+    }
+  }
+
+  .ligthCard {
+    width: 31%;
+    gap: 15px;
+  }
+}
+@media (max-width: 670px) {
+  .darkCard {
+    width: 100%;
+
+    p {
+      font-size: 11px;
+    }
+    .submit {
+      font-size: 12px;
+    }
+  }
+
+  .ligthCard {
+    width: 47%;
+    gap: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .ligthCard {
+    width: 100%;
+    gap: 10px;
+  }
+}

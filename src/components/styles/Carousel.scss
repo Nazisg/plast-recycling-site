@@ -1,0 +1,105 @@
+.carousel {
+  width: 100%;
+  background-color: #090c06;
+  .container {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+    @media (max-width: 840px) {
+      width: 85%;
+    }
+    .slick-list,
+    .slick-slider,
+    .slick-track {
+      padding: 0;
+    }
+    .slick-dots {
+      position: absolute;
+      text-align: right;
+      margin-left: 1rem;
+      right: 0.7rem;
+      display: inline;
+      bottom: -3.5rem;
+    }
+
+    .slick-dots li button:before {
+      content: "";
+    }
+
+    .slick-dots li button {
+      width: 9px;
+      height: 4px;
+      background: linear-gradient(
+        159deg,
+        rgb(45, 45, 58) 0%,
+        rgb(43, 43, 53) 100%
+      );
+      padding: 0.1rem;
+      margin-top: 1rem;
+      transition: all 400ms ease-in-out;
+      border-radius: 50px;
+    }
+
+    .slick-dots li.slick-active button {
+      background: #fff;
+      width: 15px;
+    }
+
+    .slick-dots li {
+      margin: 0;
+    }
+    .testimonials {
+      margin-top: 2rem;
+      position: relative;
+      .buttons {
+        position: absolute;
+        left: 0.7rem;
+        bottom: -4rem;
+
+        button {
+          background-color: transparent;
+          margin-right: 2rem;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          font-size: 1.1rem;
+        }
+
+        @media (max-width: 530px) {
+          display: none;
+        }
+      }
+      .line {
+        position: absolute;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.4941176471);
+        bottom: -3.3rem;
+        @media (min-width: 1024px) {
+          left: 9rem;
+          width: 68%;
+        }
+        @media (max-width: 1024px) {
+          left: 9rem;
+          width: 66%;
+        }
+        @media (max-width: 990px) {
+          left: 8rem;
+          width: 62%;
+        }
+        @media (max-width: 768px) {
+          left: 7rem;
+          width: 60%;
+        }
+        @media (max-width: 650px) {
+          left: 7rem;
+          width: 50%;
+        }
+        @media (max-width: 530px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

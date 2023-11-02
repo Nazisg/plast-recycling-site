@@ -1,0 +1,22 @@
+@font-face {
+  font-family: archivo;
+  src: url(./assets/fonts/Archivo-Regular.ttf);
+}
+@font-face {
+  font-family: archivo-thin;
+  src: url(./assets/fonts/Archivo-Thin.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: archivo;
+}
+a,
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
