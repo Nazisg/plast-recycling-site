@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import RoutesData from "../db/RoutesData";
 
 export default function Routers() {
@@ -7,7 +7,8 @@ export default function Routers() {
     <div>
       <Routes>
         {RoutesData.map((route, index) => (
-          <Route key={index} path={route.path} element={route.element} />
+          <Route key={index} path={route.path}
+            element={route.element} />
         ))}
       </Routes>
     </div>

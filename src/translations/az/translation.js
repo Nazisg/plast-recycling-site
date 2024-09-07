@@ -142,7 +142,8 @@ export const azTranslation = {
       search: {
         h1: "Axtar",
         p: "açar sözü üzrə axtarış nəticələri...",
-        placeh: "Axtar...",
+        placeh: "Axtar..."
+
       },
     },
     devicesData: {
@@ -150,24 +151,24 @@ export const azTranslation = {
       btnSub: "Müraciət et",
       data: {
         1: {
-          title: "Statik 24",
+          title: "Statik 24"
         },
         2: {
-          title: "Statik 30A",
+          title: "Statik 30A"
         },
         3: {
-          title: "Statico ST-40 üfüqi",
+          title: "Statico ST-40 üfüqi"
         },
         4: {
-          title: "Statik 24",
+          title: "Statik 24"
         },
         5: {
-          title: "Statik 30A",
+          title: "Statik 30A"
         },
         6: {
-          title: "Statik 30A",
-        },
-      },
+          title: "Statik 30A"
+        }
+      }
     },
     modal: {
       select: "Satdığınız malın kateqoriyası",
@@ -181,9 +182,9 @@ export const azTranslation = {
       inputPlaceh: {
         weight: "Çəkisi",
         fullName: "Ad və soyad",
-        number: "Əlaqə nömrəniz",
+        number: "Əlaqə nömrəniz"
       },
-      btn: "Müraciət et",
-    },
+      btn: "Müraciət et"
+    }
   },
 };

@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
-import styles from "./styles/Modal.module.scss";
+import React, { useContext, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import arrow from "../assets/icons/arrow-down-green.svg";
 import close from "../assets/icons/close.svg";
 import ContextApi from "../context-api/context";
-import { useContext } from "react";
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import styles from "./styles/Modal.module.scss";
 
 export default function Modal() {
   const { t } = useTranslation();
@@ -77,38 +75,8 @@ export default function Modal() {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: {
-          duration: 0.3,
-        },
-      }}
-      exit={{
-        opacity: 0,
-        transition: {
-          delay: 0.3,
-        },
-      }}
-      className={styles.modalBg}
-      onClick={handleClose}
-    >
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{
-          scale: 1,
-          transition: {
-            duration: 0.3,
-          },
-        }}
-        exit={{
-          scale: 0,
-          opacity: 0,
-          transition: {
-            delay: 0.3,
-          },
-        }}
+    <div className={styles.modalBg} onClick={handleClose}>
+      <div
         className={styles.modal}
         onClick={(e) => {
           e.stopPropagation();
@@ -167,7 +135,7 @@ export default function Modal() {
             {t("modal.btn")}
           </button>
         </form>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }

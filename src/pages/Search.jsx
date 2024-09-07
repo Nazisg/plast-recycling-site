@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import styles from "./styles/Search.module.scss";
+import { useTranslation } from "react-i18next";
 import search from "../assets/icons/search-green.svg";
 import OurProductsData from "../db/OurProductsData";
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import styles from "./styles/Search.module.scss";
 
 export default function Search() {
-  const OurProducts = OurProductsData();
   const { t } = useTranslation();
+  const OurProducts = OurProductsData();
+
   const [inputValue, setInputValue] = useState("");
   const [filterData, setFilterData] = useState([]);
-
   const InputChange = (e) => {
     setInputValue(e.target.value);
   };
@@ -24,23 +23,6 @@ export default function Search() {
     setFilterData(filteredData);
   }, [inputValue]);
 
-  const container = {
-    visible: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-  const item = {
-    hidden: {
-      opacity: 0,
-      translateY: 20,
-    },
-    visible: {
-      opacity: 1,
-      translateY: 0,
-    },
-  };
   return (
     <div>
       <div className={styles.search}>
@@ -59,50 +41,29 @@ export default function Search() {
       </div>
       <div className={styles.resultBox}>
         <div className={styles.result}>
-          {inputValue.length > 0 ? (
-            <p className={styles.resultText}>
-              <span>“{inputValue}”</span>
-              {t("pageHead.search.p")}
-            </p>
-          ) : null}
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={container}
-            className={styles.items}
-          >
-            {inputValue.length > 0
-              ? filterData.map((e) => (
-                  <motion.div
-                    variants={item}
-                    className={styles.item}
-                    key={e.id}
-                  >
-                    <img
-                      className={styles.imgBorder}
-                      src={e.imgSrc}
-                      alt={e.title}
-                    />
-                    <h5>{e.title}</h5>
-                    <p>{e.description}</p>
-                  </motion.div>
-                ))
-              : OurProducts.map((e) => (
-                  <motion.div
-                    variants={item}
-                    className={styles.item}
-                    key={e.id}
-                  >
-                    <img
-                      className={styles.imgBorder}
-                      src={e.imgSrc}
-                      alt={e.title}
-                    />
-                    <h5>{e.title}</h5>
-                    <p>{e.description}</p>
-                  </motion.div>
-                ))}
-          </motion.div>
+          <p className={styles.resultText}>
+            <span>“{inputValue}”</span>
+            {t("pageHead.search.p")}
+          </p>
+          <div className={styles.items}>
+            {inputValue.length > 0 ? (
+              filterData.map((e) => (
+                <div className={styles.item} key={e.id}>
+                  <img className={styles.imgBorder} src={e.imgSrc} alt={e.title} />
+                  <h5>{e.title}</h5>
+                  <p>{e.description}</p>
+                </div>
+              ))
+            ) : (
+              OurProducts.map((e) => (
+                <div className={styles.item} key={e.id}>
+                  <img className={styles.imgBorder} src={e.imgSrc} alt={e.title} />
+                  <h5>{e.title}</h5>
+                  <p>{e.description}</p>
+                </div>
+              ))
+            )}
+          </div>
         </div>
       </div>
     </div>

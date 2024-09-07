@@ -35,8 +35,10 @@
     textarea,
     input {
       border-radius: 16px;
+      // border: 1px solid #fff;
       background-color: transparent;
       padding: 12px 23px;
+      // color: #fff;
       outline: none;
       -webkit-border-radius: 16px;
       -moz-border-radius: 16px;
@@ -55,6 +57,7 @@
       gap: 20px;
       width: 100%;
       .inputGroup {
+        // width: 50%;
         position: relative;
         input {
           width: 100%;
@@ -62,12 +65,17 @@
           &:not(:placeholder-shown) ~ label,
           &:not(:focus):not(:empty) ~ label {
             top: -6px;
+            //background-color: #090c06;
             font-size: 13px;
             padding: 0 4px;
             z-index: 12;
           }
         }
         label {
+          // color: #fff;
+          // font-family: archivo-thin;
+          // background-color: #090c06;
+          // font-size: 14px;
           position: absolute;
           top: 13px;
           left: 23px;
@@ -99,11 +107,15 @@
         &:not(:placeholder-shown) ~ label,
         &:not(:focus):not(:empty) ~ label {
           top: -6px;
+          // background-color: #090c06;
           font-size: 13px;
           padding: 0 2px;
         }
       }
       label {
+        // color: #fff;
+        // font-family: archivo-thin;
+        // font-size: 14px;
         position: absolute;
         top: 13px;
         left: 23px;
@@ -123,17 +135,18 @@
 
     .inputGroup {
       width: 50%;
-      label {
+      label{
         font-size: 14px;
+
       }
     }
   }
   .textGroup {
-    label {
+    label{
       font-size: 14px;
     }
   }
-  .submit {
+  .submit{
     font-size: 14px;
   }
 }
@@ -143,17 +156,18 @@
 
     .inputGroup {
       width: 50%;
-      label {
+      label{
         font-size: 14px;
+
       }
     }
   }
   .textGroup {
-    label {
+    label{
       font-size: 14px;
     }
   }
-  .submit {
+  .submit{
     font-size: 14px;
   }
 }
@@ -163,17 +177,18 @@
 
     .inputGroup {
       width: 100%;
-      label {
+      label{
         font-size: 13px;
+
       }
     }
   }
   .textGroup {
-    label {
+    label{
       font-size: 13px;
     }
   }
-  .submit {
+  .submit{
     font-size: 13px;
   }
 }
@@ -183,17 +198,18 @@
 
     .inputGroup {
       width: 100%;
-      label {
+      label{
         font-size: 12px;
+
       }
     }
   }
   .textGroup {
-    label {
+    label{
       font-size: 12px;
     }
   }
-  .submit {
+  .submit{
     font-size: 12px;
   }
 }
@@ -202,17 +218,18 @@
     flex-wrap: wrap;
     .inputGroup {
       width: 100%;
-      label {
+      label{
         font-size: 11px;
+
       }
     }
   }
   .textGroup {
-    label {
+    label{
       font-size: 11px;
     }
   }
-  .submit {
+  .submit{
     font-size: 11px;
   }
 }

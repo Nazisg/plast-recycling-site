@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     gap: 30px;
     .item {
+      // width: 350px;
       border: 1px solid #e8e8e8;
       border-radius: 8px;
       padding: 16px;
@@ -24,6 +25,7 @@
       .img {
         width: 100%;
         height: 171px;
+        object-fit: cover;
       }
       .price {
         position: absolute;
@@ -72,16 +74,16 @@
   .weItems {
     .item {
       width: 31%;
-      .price {
+      .price{
         font-size: 14px;
       }
-      h3 {
+      h3{
         font-size: 19px;
       }
-      p {
+      p{
         font-size: 13px;
       }
-      .btnBox button {
+      .btnBox button{
         font-size: 14px;
       }
     }
@@ -91,16 +93,16 @@
   .weItems {
     .item {
       width: 31%;
-      .price {
+      .price{
         font-size: 14px;
       }
-      h3 {
+      h3{
         font-size: 19px;
       }
-      p {
+      p{
         font-size: 13px;
       }
-      .btnBox button {
+      .btnBox button{
         font-size: 14px;
       }
     }
@@ -110,16 +112,16 @@
   .weItems {
     .item {
       width: 47%;
-      .price {
+      .price{
         font-size: 13px;
       }
-      h3 {
+      h3{
         font-size: 18px;
       }
-      p {
+      p{
         font-size: 13px;
       }
-      .btnBox button {
+      .btnBox button{
         font-size: 13px;
       }
     }
@@ -129,16 +131,16 @@
   .weItems {
     .item {
       width: 45%;
-      .price {
+      .price{
         font-size: 12px;
       }
-      h3 {
+      h3{
         font-size: 17px;
       }
-      p {
+      p{
         font-size: 12px;
       }
-      .btnBox button {
+      .btnBox button{
         font-size: 12px;
       }
     }
@@ -148,16 +150,16 @@
   .weItems {
     .item {
       width: 100%;
-      .price {
+      .price{
         font-size: 11px;
       }
-      h3 {
+      h3{
         font-size: 16px;
       }
-      p {
+      p{
         font-size: 12px;
       }
-      .btnBox button {
+      .btnBox button{
         font-size: 12px;
       }
     }

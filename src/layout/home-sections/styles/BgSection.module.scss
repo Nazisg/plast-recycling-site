@@ -16,7 +16,7 @@
     span {
       font-family: archivo-thin;
     }
-    h1 {
+    h1{
       text-align: center;
     }
     button {
@@ -31,118 +31,106 @@
     }
     .down {
       position: absolute;
-      animation: bounce 1.5s infinite;
-      cursor: pointer;
     }
-  }
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    h1 {
-      font-size: 56px;
-      letter-spacing: 3px;
-    }
-    span {
-      font-family: archivo-thin;
-      letter-spacing: 1px;
-      font-size: 16px;
-    }
-    button {
-      font-size: 14px;
-    }
-    .down {
-      bottom: 40px;
-    }
+
+  h1 {
+    font-size: 56px;
+    letter-spacing: 3px;
   }
+  span {
+    font-family: archivo-thin;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  button{
+    font-size: 14px;
+  }
+  .down {
+    bottom: 40px;
+  }
+}
 }
 @media (max-width: 1200px) {
   .container {
-    h1 {
-      font-size: 56px;
-      letter-spacing: 3px;
-    }
-    span {
-      font-family: archivo-thin;
-      letter-spacing: 1px;
-      font-size: 16px;
-    }
-    button {
-      font-size: 14px;
-    }
-    .down {
-      bottom: 40px;
-    }
+
+  h1 {
+    font-size: 56px;
+    letter-spacing: 3px;
   }
+  span {
+    font-family: archivo-thin;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  button{
+    font-size: 14px;
+  }
+  .down {
+    bottom: 40px;
+  }
+}
 }
 @media (min-width: 768px) and (max-width: 990px) {
   .container {
-    h1 {
-      font-size: 46px;
-      letter-spacing: 3px;
-    }
-    span {
-      font-family: archivo-thin;
-      letter-spacing: 1px;
-      font-size: 14px;
-    }
-    button {
-      font-size: 13px;
-    }
-    .down {
-      bottom: 35px;
-    }
+
+  h1 {
+    font-size: 46px;
+    letter-spacing: 3px;
   }
+  span {
+    font-family: archivo-thin;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+  button{
+    font-size: 13px;
+  }
+  .down {
+    bottom: 35px;
+  }
+}
 }
 @media (min-width: 400px) and (max-width: 767px) {
   .container {
-    h1 {
-      font-size: 30px;
-      letter-spacing: 3px;
-    }
-    span {
-      letter-spacing: 1px;
-      font-size: 10px;
-    }
-    button {
-      font-size: 12px;
-    }
-    .down {
-      bottom: 30px;
-    }
+
+  h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  span {
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+  button{
+    font-size: 12px;
+  }
+  .down {
+    bottom: 30px;
   }
 }
-@media (max-width: 400px) {
+}
+@media (max-width: 400px){
   .container {
-    h1 {
-      font-size: 25px;
-      letter-spacing: 3px;
-    }
-    span {
-      letter-spacing: 1px;
-      font-size: 10px;
-    }
-    button {
-      font-size: 12px;
-    }
-    .down {
-      bottom: 30px;
-    }
+
+  h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
   }
+  span {
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+  button{
+    font-size: 12px;
+  }
+  .down {
+    bottom: 30px;
+  }
+}
+
 }

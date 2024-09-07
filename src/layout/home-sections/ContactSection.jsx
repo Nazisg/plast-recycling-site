@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import styles from "./styles/ContactSection.module.scss";
-import { useLocation } from "react-router-dom";
+import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import { useLocation } from 'react-router-dom';
+import styles from './styles/ContactSection.module.scss';
 
 export default function ContactSection() {
   const pathLocation = useLocation();
   const { t } = useTranslation();
 
-  const [name, setName] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [mobileNumber, setMobileNumber] = useState('');
+  const [message, setMessage] = useState('');
   const [formSubmissions, setFormSubmissions] = useState([]);
 
   const handleSubmit = (e) => {
@@ -21,20 +21,18 @@ export default function ContactSection() {
       message,
     };
 
-    const storedSubmissions = localStorage.getItem("formSubmissions");
-    const existingSubmissions = storedSubmissions
-      ? JSON.parse(storedSubmissions)
-      : [];
+    const storedSubmissions = localStorage.getItem('formSubmissions');
+    const existingSubmissions = storedSubmissions ? JSON.parse(storedSubmissions) : [];
 
     const submissions = [...existingSubmissions, formData];
-    localStorage.setItem("formSubmissions", JSON.stringify(submissions));
+    localStorage.setItem('formSubmissions', JSON.stringify(submissions));
 
-    setName("");
-    setMobileNumber("");
-    setMessage("");
+    setName('');
+    setMobileNumber('');
+    setMessage('');
   };
   return (
-    <div className={pathLocation.pathname === "/" ? "darkForm" : "lightForm"}>
+    <div className={pathLocation.pathname === '/' ? 'darkForm' : 'lightForm'}>
       <div className={styles.form}>
         <form onSubmit={handleSubmit}>
           <div className={styles.inputBox}>

@@ -1,12 +1,11 @@
-import "./App.scss";
-import Header from "./layout/Header";
-import { BrowserRouter as Router } from "react-router-dom";
-import Routers from "./routers/Routers";
-import Footer from "./layout/Footer";
-import Modal from "./components/Modal";
 import { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./App.scss";
+import Modal from "./components/Modal";
 import ContextApi from "./context-api/context";
-import { AnimatePresence } from "framer-motion";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import Routers from "./routers/Routers";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +19,7 @@ function App() {
           <Routers />
           <Footer />
         </Router>
-        <AnimatePresence>{isOpen ? <Modal /> : null}</AnimatePresence>
+        {isOpen ? <Modal /> : null}
       </ContextApi.Provider>
     </>
   );

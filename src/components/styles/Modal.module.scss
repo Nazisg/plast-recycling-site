@@ -11,10 +11,12 @@
   justify-content: center;
   z-index: 100;
   overflow: hidden;
+
   .modal {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    // width: 400px;
     background-color: #fff;
     z-index: 101;
     border-radius: 24px;
@@ -76,6 +78,7 @@
           align-items: center;
           border: 1px solid #98989869;
           border-radius: 16px;
+          // padding: 0 20px;
           -webkit-border-radius: 16px;
           -moz-border-radius: 16px;
           -ms-border-radius: 16px;
@@ -84,6 +87,8 @@
           span {
             width: 100%;
             color: #aeaeae;
+            // font-size: 14px;
+            // padding: 15px 0;
           }
           .selectedOption {
             color: black;
@@ -101,6 +106,7 @@
           display: flex;
           flex-direction: column;
           span {
+            // padding: 7px 20px;
             &:hover {
               background-color: #00ad33;
               color: #fff;
@@ -112,6 +118,7 @@
         border-radius: 12px;
         background-color: #00ad33;
         color: #fff;
+        // padding: 10px 30px;
         -webkit-border-radius: 12px;
         -moz-border-radius: 12px;
         -ms-border-radius: 12px;
@@ -127,10 +134,10 @@
     h2 {
       font-size: 26px;
     }
-    .select {
+    .select{
       padding: 0 20px;
 
-      span {
+      span{
         font-size: 14px;
         padding: 15px 0;
       }
@@ -141,16 +148,17 @@
         font-size: 14px;
       }
     }
-    .content {
-      span {
-        padding: 7px 20px;
-        font-size: 14px;
-      }
-    }
-    .submit {
-      padding: 10px 30px;
+   .content{
+    span {
+      padding: 7px 20px;
       font-size: 14px;
     }
+   }
+   .submit {
+    padding: 10px 30px;
+    font-size: 14px;
+   }
+
   }
 }
 @media (max-width: 1200px) {
@@ -159,10 +167,10 @@
     h2 {
       font-size: 26px;
     }
-    .select {
+    .select{
       padding: 0 20px;
 
-      span {
+      span{
         font-size: 14px;
         padding: 15px 0;
       }
@@ -173,16 +181,17 @@
         font-size: 14px;
       }
     }
-    .content {
+    .content{
       span {
         padding: 7px 20px;
         font-size: 14px;
       }
-    }
-    .submit {
+     }
+     .submit {
       padding: 10px 30px;
       font-size: 14px;
-    }
+     }
+
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
@@ -191,10 +200,10 @@
     h2 {
       font-size: 22px;
     }
-    .select {
+    .select{
       padding: 0 17px;
 
-      span {
+      span{
         font-size: 13px;
         padding: 12px 0;
       }
@@ -205,16 +214,16 @@
         font-size: 13px;
       }
     }
-    .content {
+    .content{
       span {
         padding: 5px 15px;
         font-size: 12px;
       }
-    }
-    .submit {
+     }
+     .submit {
       padding: 12px 23px;
       font-size: 13px;
-    }
+     }
   }
 }
 @media (min-width: 400px) and (max-width: 767px) {
@@ -223,10 +232,10 @@
     h2 {
       font-size: 18px;
     }
-    .select {
+    .select{
       padding: 0 14px;
 
-      span {
+      span{
         font-size: 12px;
         padding: 10px 0;
       }
@@ -237,16 +246,16 @@
         font-size: 12px;
       }
     }
-    .content {
+    .content{
       span {
         padding: 4px 13px;
         font-size: 12px;
       }
-    }
-    .submit {
+     }
+     .submit {
       padding: 10px 20px;
       font-size: 12px;
-    }
+     }
   }
 }
 @media (max-width: 400px) {
@@ -255,10 +264,10 @@
     h2 {
       font-size: 16px;
     }
-    .select {
+    .select{
       padding: 0 12px;
 
-      span {
+      span{
         font-size: 11px;
         padding: 8px 0;
       }
@@ -269,15 +278,15 @@
         font-size: 11px;
       }
     }
-    .content {
+    .content{
       span {
         padding: 3px 10px;
         font-size: 11px;
       }
-    }
-    .submit {
+     }
+     .submit {
       padding: 7px 17px;
       font-size: 11px;
-    }
+     }
   }
 }

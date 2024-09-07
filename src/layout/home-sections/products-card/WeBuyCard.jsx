@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "../styles/WeBuySection.module.scss";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import styles from "../styles/WeBuySection.module.scss";
 
 export default function WeBuyCard({
   price,
@@ -11,19 +10,9 @@ export default function WeBuyCard({
   description,
 }) {
   const { t } = useTranslation();
-  const item = {
-    hidden: {
-      opacity: 0,
-      translateY: 20,
-    },
-    visible: {
-      opacity: 1,
-      translateY: 0,
-    },
-  };
 
   return (
-    <motion.div variants={item} className={styles.item}>
+    <div className={styles.item}>
       <div className={styles.price}>
         {price} /{weight}
       </div>
@@ -34,6 +23,6 @@ export default function WeBuyCard({
         <button>{t("weBuyData.btn")}</button>
         <button className={styles.submit}>{t("weBuyData.btnSub")}</button>
       </div>
-    </motion.div>
+    </div>
   );
 }

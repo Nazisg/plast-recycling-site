@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./styles/AboutSection.module.scss";
-import aboutImg from "../../assets/images/about-img.png";
-import polygonGreen from "../../assets/icons/polygon-green.svg";
 import { useTranslation } from "react-i18next";
+import polygonGreen from "../../assets/icons/polygon-green.svg";
+import aboutImg from "../../assets/images/about-img.png";
+import styles from './styles/AboutSection.module.scss';
 export default function AboutSection() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <div>
       <div className={styles.about}>
@@ -23,8 +23,7 @@ export default function AboutSection() {
           </div>
           <div className={styles.rigth}>
             <h4>
-              {t("about.h4")}
-              <span>?</span>
+              {t("about.h4")}<span>?</span>
             </h4>
             <p>
               Tortor, nibh orci, sed in sed sed dictum tristique. Turpis laoreet

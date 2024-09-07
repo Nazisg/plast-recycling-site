@@ -1,21 +1,14 @@
 import React from "react";
-import PageHeader from "../layout/PageHeader";
-import styles from "./styles/Devices.module.scss";
+import { useTranslation } from "react-i18next";
 import DevicesData from "../db/DevicesData";
 import DevicesCard from "../layout/home-sections/products-card/DevicesCard";
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import PageHeader from "../layout/PageHeader";
+import styles from "./styles/Devices.module.scss";
 
 export default function Devices() {
   const { t } = useTranslation();
   const DevicesProducts = DevicesData();
-  const container = {
-    visible: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
+
   return (
     <div>
       <PageHeader
@@ -23,12 +16,7 @@ export default function Devices() {
         page_name={t("pageHead.devices.pageName")}
       />
       <div className={styles.devicesItems}>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={container}
-          className={styles.items}
-        >
+        <div className={styles.items}>
           {DevicesProducts?.map((e) => (
             <DevicesCard
               key={e.id}
@@ -39,7 +27,7 @@ export default function Devices() {
               description={e.description}
             />
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

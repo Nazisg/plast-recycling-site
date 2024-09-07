@@ -1,11 +1,10 @@
 import React from "react";
-import styles from "./styles/Footer.module.scss";
-import work from "../assets/icons/work-green.svg";
+import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
 import headset from "../assets/icons/headset-green.svg";
 import location from "../assets/icons/location-green.svg";
-import { NavLink } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import work from "../assets/icons/work-green.svg";
+import styles from "./styles/Footer.module.scss";
 
 export default function Footer() {
   const pathLocation = useLocation();
@@ -18,18 +17,10 @@ export default function Footer() {
           <div className={styles.work}>
             <img src={work} />
             <h2>{t("footer.work.h2")}</h2>
-            <div className="activelinks">
-              <div className={styles.links}>
-                <NavLink activeclassname="active" to="/our-products">
-                  {t("footer.work.links.ourPro")}
-                </NavLink>
-                <NavLink activeclassname="active" to="/we-buy">
-                  {t("footer.work.links.weBuy")}
-                </NavLink>
-                <NavLink activeclassname="active" to="/devices">
-                  {t("footer.work.links.devices")}
-                </NavLink>
-              </div>
+            <div className={styles.links}>
+              <Link to="/OurProducts">{t("footer.work.links.ourPro")}</Link>
+              <Link to="/WeBuy">{t("footer.work.links.weBuy")}</Link>
+              <Link to="/Devices">{t("footer.work.links.devices")}</Link>
             </div>
           </div>
           <div className={styles.headset}>
@@ -45,7 +36,7 @@ export default function Footer() {
                 viewBox="0 0 14 14"
                 fill="none"
               >
-                <g opacity="0.5" clipPath="url(#clip0_28_79)">
+                <g clipPath="url(#clip0_28_79)">
                   <path
                     d="M12.25 0H1.75C0.784875 0 0 0.784875 0 1.75V12.25C0 13.2151 0.784875 14 1.75 14H7V9.1875H5.25V7H7V5.25C7 3.80013 8.17513 2.625 9.625 2.625H11.375V4.8125H10.5C10.017 4.8125 9.625 4.767 9.625 5.25V7H11.8125L10.9375 9.1875H9.625V14H12.25C13.2151 14 14 13.2151 14 12.25V1.75C14 0.784875 13.2151 0 12.25 0Z"
                     fill="white"

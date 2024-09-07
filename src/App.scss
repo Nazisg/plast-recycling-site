@@ -85,6 +85,7 @@
 }
 
 .ligthCard {
+  // width: 200px;
   display: flex;
   flex-direction: column;
   color: #090c06;
@@ -95,12 +96,6 @@
     font-size: 13px;
     opacity: 0.8;
     line-height: 20px;
-  }
-}
-.activelinks {
-  .active {
-    border-left: 2px solid #00ad33;
-    padding-left: 10px;
   }
 }
 

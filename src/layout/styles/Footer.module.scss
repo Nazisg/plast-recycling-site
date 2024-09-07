@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   display: flex;
+  // padding: 80px 0;
   flex-direction: column;
   align-items: center;
 
@@ -9,8 +10,11 @@
     display: flex;
     justify-content: center;
     gap: 25px;
+    // flex-wrap: nowrap;
     .work {
+      // width: 32%;
       display: flex;
+      // gap: 20px;
       padding: 10px;
       flex-direction: column;
       align-items: flex-start;
@@ -20,40 +24,37 @@
         gap: 10px;
         a {
           opacity: 0.6;
-          &:hover {
-            opacity: 1;
-          }
+          // font-size: 14px;
         }
       }
     }
     .headset {
+      // width: 32%;
       display: flex;
       flex-direction: column;
+      // gap: 20px;
       padding: 10px;
       align-items: flex-start;
       span {
         font-family: archivo-thin;
+        // font-size: 14px;
       }
       .svgBox {
         display: flex;
         gap: 20px;
         align-items: center;
-        svg {
-          cursor: pointer;
-          &:hover g {
-            opacity: 1;
-            fill: red;
-          }
-        }
       }
     }
     .location {
+      // width: 32%;
       display: flex;
       flex-direction: column;
       padding: 10px;
       align-items: flex-start;
+      // gap: 20px;
       p {
         font-family: archivo-thin;
+        // font-size: 14px;
         line-height: 24px;
       }
     }
@@ -86,7 +87,7 @@
       .headset {
         gap: 20px;
         width: 32%;
-        span {
+        span{
           font-size: 14px;
         }
       }
@@ -96,8 +97,8 @@
       }
     }
   }
-  .foot {
-    p {
+  .foot{
+    p{
       font-size: 13px;
     }
   }
@@ -123,21 +124,21 @@
       .headset {
         gap: 20px;
         width: 32%;
-        span {
+        span{
           font-size: 14px;
         }
       }
       .location {
         gap: 20px;
         width: 32%;
-        p {
+        p{
           font-size: 14px;
         }
       }
     }
   }
-  .foot {
-    p {
+  .foot{
+    p{
       font-size: 13px;
     }
   }
@@ -163,21 +164,21 @@
       .headset {
         gap: 15px;
         width: 45%;
-        span {
+        span{
           font-size: 13px;
         }
       }
       .location {
         gap: 15px;
         width: 100%;
-        p {
+        p{
           font-size: 14px;
         }
       }
     }
   }
-  .foot {
-    p {
+  .foot{
+    p{
       font-size: 11px;
     }
   }
@@ -205,21 +206,21 @@
         width: 47%;
         gap: 12px;
 
-        span {
+        span{
           font-size: 12px;
         }
       }
       .location {
         width: 100%;
         gap: 12px;
-        p {
+        p{
           font-size: 13px;
         }
       }
     }
   }
-  .foot {
-    p {
+  .foot{
+    p{
       font-size: 10px;
     }
   }
@@ -245,24 +246,24 @@
       .headset {
         gap: 10px;
         width: 45%;
-        span {
+        span{
           font-size: 11px;
         }
-        svg {
+        svg{
           width: 12px;
         }
       }
       .location {
         gap: 10px;
         width: 100%;
-        p {
+        p{
           font-size: 12px;
         }
       }
     }
   }
-  .foot {
-    p {
+  .foot{
+    p{
       font-size: 8px;
     }
   }

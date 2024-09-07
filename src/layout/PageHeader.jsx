@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../layout/styles/PageHeader.module.scss";
-import nextArrow from "../assets/icons/next-arrow.svg";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import nextArrow from "../assets/icons/next-arrow.svg";
+import styles from "../layout/styles/PageHeader.module.scss";
 
 export default function PageHeader({ title, page_name }) {
   const { t } = useTranslation();

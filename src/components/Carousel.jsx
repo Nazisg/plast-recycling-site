@@ -1,12 +1,10 @@
 import React, { useRef } from "react";
+import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Slider from "react-slick";
-import "./styles/Carousel.scss";
-import {
-  HiOutlineArrowNarrowLeft,
-  HiOutlineArrowNarrowRight,
-} from "react-icons/hi";
 import OurProductsData from "../db/OurProductsData";
 import OurProductsCard from "../layout/home-sections/products-card/OurProductsCard";
+import "./styles/Carousel.scss";
+
 
 var settings = {
   dots: true,
@@ -52,7 +50,7 @@ const Carousel = () => {
       <div id="client" className="container">
         <div className="testimonials">
           <Slider ref={arrowRef} {...settings}>
-            {OurProducts.slice(0, 5).map((e) => (
+            {OurProducts?.map((e) => (
               <OurProductsCard
                 key={e.id}
                 imgSrc={e.imgSrc}
